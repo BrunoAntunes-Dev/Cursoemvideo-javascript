@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <style>
+        input{
+            margin: 10px;
+            font: normal 18pt arial;
+        }
+        body{
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média de notas</h1>
+    <input type="number" name="nt1" id="nt1"></br>
+    <input type="number" name="nt2" id="nt2"></br>
+    <input type="number" name="nt3" id="nt3"></br>
+    <input type="number" name="nt5" id="nt4"></br>
+    <input type="number" name="nt4" id="nt5"></br>
+    <div id="res">
+        <strong><p>RESULTADO</p></strong>
+    </div>
+    <input type="button" value="soma" onclick="somar()">
+    <script>
+        function somar(){
+            var nota1 = document.getElementById('nt1')
+            var nota2 = document.getElementById('nt2')
+            var nota3 = document.getElementById('nt3')
+            var nota4 = document.getElementById('nt4')
+            var nota5 = document.getElementById('nt5')
+            var res = document.getElementById('res')
+            var nt1 = Number(nota1.value)
+            var nt2 = Number(nota1.value)
+            var nt3 = Number(nota1.value)
+            var nt4 = Number(nota1.value)
+            var nt5 = Number(nota1.value)
+            var so = nt1 + nt2 + nt3 + nt4 + nt5
+            res.innerText = `A Média do aluno que tirou as notas ${nt1}, ${nt2}, ${nt3}, ${nt4}, ${nt5} É de ${so} `
+            
+        }
+    </script>
+    
+</body>
+</html>
